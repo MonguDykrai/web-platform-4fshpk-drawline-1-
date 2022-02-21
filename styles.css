@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#holograph {
+  width: 50vw;
+  height: 60vh;
+  background: #1f1f89;
+}
