@@ -4,9 +4,39 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <div id="container">
-      <canvas id="canvas"></canvas>
-      <div id="holograph"></div>
+    <div id="container" class="clearfix">
+      <svg id="svg">
+        <line
+          id="line1"
+          x1="111"
+          y1="116"
+          x2="499"
+          y2="122"
+          stroke="rgb(232,157,66)"
+          stroke-dasharray="6 6"
+        />
+        <line
+          id="line1"
+          x1="143"
+          y1="150"
+          x2="540"
+          y2="519"
+          stroke="rgb(232,157,66)"
+          stroke-dasharray="6 6"
+        />
+      </svg>
+      <div id="comb">
+        <canvas id="canvas"></canvas>
+        <div id="form">
+          <div>纵向：<input type="text" /></div>
+          <div>双向车道数：<input type="text" /></div>
+          <div>隔离带宽度：<input type="text" /></div>
+        </div>
+      </div>
+      <div id="holograph">
+        <div id="car1" class="car"></div>
+        <div id="car2" class="car"></div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
